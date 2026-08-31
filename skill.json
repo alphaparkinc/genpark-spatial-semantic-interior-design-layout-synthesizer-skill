@@ -1,0 +1,41 @@
+{
+  "name": "genpark-spatial-semantic-interior-design-layout-synthesizer-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Spatial semantic interior design layout synthesizer generating ergonomic furniture floorplans and photorealistic renders.",
+  "author": "genpark",
+  "category": "spatial-design",
+  "tags": [
+    "room-design",
+    "interior-layout",
+    "furniture-placement",
+    "architectural-floorplan",
+    "3d-rendering"
+  ],
+  "inputs": {
+    "room_type": {
+      "type": "string"
+    },
+    "dimensions_meters": {
+      "type": "object"
+    },
+    "design_aesthetic": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "interior_plan_id": {
+      "type": "string"
+    },
+    "furniture_pieces_placed_count": {
+      "type": "integer"
+    },
+    "spatial_clearance_ergonomic_score_pct": {
+      "type": "number"
+    },
+    "photorealistic_render_webp_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
